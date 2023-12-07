@@ -17,7 +17,7 @@ string Block::GetHash() {
 
 
 void Block::MineBlock(uint32_t nDifficulty) {
-    char cstr[nDifficulty + 1];
+    char*cstr[nDifficulty + 1];
     for (uint32_t i = 0; i < nDifficulty; ++i) {
         cstr[i] = '0';
     }
