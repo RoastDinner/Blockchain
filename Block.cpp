@@ -1,7 +1,7 @@
 #include "Block.h"
 #include "sha256.h"
-
-
+#include <iostream>
+using namespace std;
 Block::Block(uint32_t nIndexIn, const string &sDataIn) : _nIndex(nIndexIn), _sData(sDataIn) {
 
     _nNonce = -1;
